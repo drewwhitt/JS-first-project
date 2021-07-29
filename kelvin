@@ -1,0 +1,24 @@
+//kelvin is equal to 293
+const kelvin = 293;
+
+//celsius is equal to kelvin minus 273
+var celsius = kelvin - 273;
+console.log(celsius);
+
+//fahrenheit is equal to celsius times 9/5ths plus 32
+var fahrenheit = celsius * (9/5) + 32;
+
+//Math.floor will round solution down to nearest whole number
+fahrenheit = Math.floor(fahrenheit);
+console.log(fahrenheit);
+
+//probably more basic way of string interpolation
+console.log('The temperature is ' + fahrenheit + ' degrees Fahrenheit.');
+
+//more ideal way of string interpolation
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+
+//converting celsius to newtons
+var newton = celsius * (33/100);
+newton = Math.floor(newton);
+console.log(`The temperature is ${newton} degrees in Newtons.`)
